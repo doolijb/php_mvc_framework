@@ -1,0 +1,9 @@
+# Rewrites and redirects path's in this directory to index.php
+<IfModule mod_rewrite.c>
+  Options -Multiviews
+  RewriteEngine On
+  RewriteBase /public
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteRule ^(.+)$ index.php?url=$1 [QSA,L]
+</IfModule>
