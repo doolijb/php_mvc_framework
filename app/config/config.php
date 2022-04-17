@@ -9,7 +9,7 @@
     define('APPROOT', dirname(dirname(__FILE__)));
 
     // Url root
-    const URLROOT = 'localhost';
+    const URLROOT = 'http://localhost';
 
     // Site name
     const SITENAME = 'MVC Framework';
