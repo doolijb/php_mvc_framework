@@ -1,3 +1,5 @@
+/* GLOBAL */
+
 html, body {
     height: 100%;
     width: 100%;
@@ -6,11 +8,71 @@ html, body {
     top: 0;
     bottom: 0;
     font-family: 'Karla', sans-serif;
+    background-color: #f2f2f2;
+}
+
+a {
+    text-decoration: none;
 }
 
 main {
     min-height: 100vh;
 }
+
+h2 {
+    font-size: 50px;
+    margin: 0;
+}
+
+h3 {
+    font-size: 14px;
+    color: #696969;
+    font-style: italic;
+}
+
+p {
+    font-size: 18px;
+    color: #666;
+}
+
+.btn {
+    passing: 8px 18px;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #fff;
+    transition: 0.20s ease-in;
+    padding: 6px 24px;
+    border: 0;
+    cursor: pointer;
+    margin-left: 0.1em;
+    margin-right: 0.1em;
+}
+
+.btn:hover {
+    color: #ffffff;
+}
+
+.green {
+    background: #4CAF50;
+}
+
+.red {
+    background: red;
+}
+
+.orange {
+    background: orange;
+}
+
+.green:hover {
+    background: #64A764
+}
+
+.orange:hover, .red:hover {
+    background: black;
+}
+
+/* NAVIGATION */
 
 #top-nav {
     display: block;
@@ -40,27 +102,6 @@ main {
     color: #afafaf;
 }
 
-#section-landing {
-    background: url('/img/egor-vikhrev-g0DVdLyF1B4-unsplash.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 100%;
-    width: 100%;
-    margin: 0;
-    padding-top: 1px; /* Fix firefox nested margin bug */
-}
-
-#wrapper-landing {
-    position: relative;
-    text-align: center;
-    margin: 0 auto;
-    top: 35%;
-    color: antiquewhite;
-    font-size: 1.5em;
-    text-shadow: black 2px 2px 10px;
-}
-
 .btn-login {
     border: 1px solid #fff;
     padding: 6px 24px;
@@ -72,6 +113,18 @@ main {
     background-color: #1a1a1a;
     box-shadow: 0px 0px 10px #1a1a1a;
 }
+
+/* FOOTER */
+
+footer {
+    background-color: #000;
+    color: antiquewhite;
+    text-align: center;
+    margin: 0;
+    padding: 1em;
+}
+
+/* FORMS */
 
 #container-form {
     width: 100%;
@@ -86,9 +139,14 @@ main {
     text-align: center;
 }
 
-#wrapper-form input {
-    width: 200px;
-    border: 1px solid #ccc;
+input {
+
+}
+
+input, textarea {
+    width: 400px;
+    border: 1px solid #cbcbcb;
+    border-radius: 4px;
     background-color: #f5f5f5;
     font-size: 18px;
     display: block;
@@ -97,9 +155,8 @@ main {
     padding: 3px;
 }
 
-input::placeholder {
+input::placeholder, textarea::placeholder {
     color: #a1a1a1;
-    font-size: 14px;
 }
 
 #submit {
@@ -138,11 +195,49 @@ input::placeholder {
     color: #ff0000;
 }
 
-footer {
-    background-color: #000;
-    color: antiquewhite;
-    text-align: center;
+/* HOME PAGE */
+
+#section-landing {
+    background: url('/img/egor-vikhrev-g0DVdLyF1B4-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
     margin: 0;
-    padding: 1em;
+    padding-top: 1px; /* Fix firefox nested margin bug */
 }
 
+#wrapper-landing {
+    position: relative;
+    text-align: center;
+    margin: 0 auto;
+    top: 35%;
+    color: antiquewhite;
+    font-size: 1.5em;
+    text-shadow: black 2px 2px 10px;
+}
+
+/* BLOG */
+
+.dark {
+    background-color: #000;
+    box-shadow: 0px 0px 10px #000;
+}
+
+.container {
+    margin: 0 auto;
+    width: 80%;
+    padding: 100px 0px;
+}
+
+.container-item {
+    border-bottom: 1px solid #dcdcdc;
+    padding: 40px 0;
+}
+
+/* Create Post */
+
+.center {
+    text-align: center;
+}

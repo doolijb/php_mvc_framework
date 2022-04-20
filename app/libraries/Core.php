@@ -38,6 +38,7 @@
         }
 
         public function getUrl() {
+
             if(isset($_GET['url'])) {
                 $url = rtrim($_GET['url'], '/');
 
@@ -46,8 +47,11 @@
 
                 // Split url into array
                 $url = explode('/', $url);
-
-                return $url;
+            } else {
+                // If there is no url, use default controller/page
+                $url = ['pages', 'index'];
             }
+
+            return $url;
         }
     }
